@@ -1,3 +1,8 @@
+# Music Playlist App
+
+## Contents
+This is where all the documentation for the project will be:
+
 ### Introduction
 ### Brief
 To create a CRUD application with utilisation of supporting tools,
