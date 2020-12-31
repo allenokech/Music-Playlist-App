@@ -1,12 +1,12 @@
 {% extends 'layout.html' %}
 {% block body %}
 <br><br>
-Original Playlist: {{ playlist.playlist_name }} 
-<br><br>
+<div class = 'form'>
 <form action='' method='POST'>
     {{ form.hidden_tag() }}
-    {{ form.playlist_name.label }}    {{ form.playlist_name}} <br>
+    {{ form.song_title.label }} {{ form.song_title }}<br>
     {{ form.submit }}
 </form>
+</div>
 
 {% endblock body %}
