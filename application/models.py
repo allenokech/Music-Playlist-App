@@ -10,7 +10,7 @@ class Song(db.Model):
  #   playlistsong = db.relationship('playlistsong', backref='song')
 
 association_table = db.Table('association_table', db.Model.metadata,
-    db.Column('playlist', db.Integer, db.ForeignKey('playlist.id')),
+    db.Column('playlist_id', db.Integer, db.ForeignKey('playlist.id')),
     db.Column('song_id', db.Integer, db.ForeignKey('song.id')))
 
 class Playlist(db.Model):

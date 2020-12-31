@@ -5,8 +5,10 @@
 <form action='' method='POST'>
     {{ form.hidden_tag() }}
     {{ form.song_title.label }} {{ form.song_title }}<br>
+    {{ form.artist_name.label }} {{ form.artist_name }}<br>
+    {{ form.genre.label }} {{ form.genre }}<br>
+    {{ form.release_year.label }} {{ form.release_year }}<br>
     {{ form.submit }}
 </form>
-</div>
 
 {% endblock body %}
