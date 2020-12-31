@@ -20,7 +20,7 @@ In order to do this, the follwowing is required:
 - Full integration into GitHub
 
 #### My Proposition
-To achieve this, I decided to create a simple music playlist application that allows users to create playlists, add, update and delete songs within those playlists.
+To achieve this, I decided to create a simple music playlist application that allows users to create playlists and add, update and delete songs within those playlists.
 The application must allow the user to do the following:
 - Create:
   - Playlist Name
