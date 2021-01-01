@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<h2>Music Playlists</h2>
+{% for playlist in all_playlists %}
+        {{ playlist.playlist_name }}
+        <br>
+        {{ playlist.date_created }}
+        <br> 
+        <form action="{{ url_for('view_playlist', id=playlist.id) }}">
+            <input type=submit value="View Playlist">
+        </form>
+        <form action="{{ url_for('update', id=playlist.id) }}">
+            <input type=submit value="Update Playlist">
+        </form>
+        <form action="{{ url_for('delete', id=playlist.id) }}">
+            <input type=submit value="Delete Playlist">
+        </form>
+        <br>
+        <br> 
+{% endfor %}
+
+<h2>Songs Added</h2>
+{% for song in all_songs %}
+        {{ song.song_title }}
+        <br>
+        {{ song.artist_name }} 
+        <br> 
+        <form action="{{ url_for('addsong', id=song.id, playlist_id=playlist.id) }}">
+            <input type=submit value="Add Song">
+        </form>
+        <br>
+        <br> 
+{% endfor %} 
+
+{% endblock body %}
