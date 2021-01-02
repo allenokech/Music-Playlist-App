@@ -29,8 +29,8 @@ def create_playlist():
     
     return render_template('create.html', title='Create a playlist', form=form)
 
-@app.route('/addsong/<int:id>/<int:playlist_id>', methods=['GET','POST'])
-def addsong(id, playlist_id):
+@app.route('/addsong', methods=['GET','POST'])
+def addsong():
     form = SongForm()
     if request.method == 'POST':
         if form.validate_on_submit():

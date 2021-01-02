@@ -3,9 +3,9 @@
 
 <h2>Music Playlists</h2>
 {% for playlist in all_playlists %}
-        {{ playlist.playlist_name }}
+       Playlist Name: {{ playlist.playlist_name }}
         <br>
-        {{ playlist.date_created }}
+       Date Created: {{ playlist.date_created }}
         <br> 
         <form action="{{ url_for('view_playlist', id=playlist.id) }}">
             <input type=submit value="View Playlist">
