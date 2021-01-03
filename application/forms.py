@@ -8,7 +8,7 @@ class SongForm(FlaskForm):
     artist_name = StringField("Artist's Name", validators=[DataRequired()])
     genre = StringField("Song Genre", validators=[DataRequired()])
     release_year = IntegerField("Year of Release", validators=[DataRequired()])
-    playlist = SelectField("Select Playlist", choices=[(p.id, p.playlist_name) for p in Playlist.query.order_by("playlist_name")], validators=[DataRequired()])
+    playlist = SelectField("Select Playlist", choices=[(p.id, p.playlist_name) for p in Playlist.query.order_by("playlist_name")])
     submit = SubmitField("Add Song")
 
 class PlaylistForm(FlaskForm):

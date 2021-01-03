@@ -3,14 +3,15 @@ from flask import url_for
 from flask_testing import TestCase
 
 from application import app, db
-from application.models import Playlist, Song, PlaylistForm, SongForm
+from application.models import Playlist, Song
 
 class TestBase(TestCase):
     def create_app(self):
-        app.config.update(SQLALCHEMY_DATABASE_URI="mysql+pymysql://root:password@35.246.16.254/playlist_db",
-                SECRET_KEY= "jldhfgjlsdbn",
-                DEBUG=True
-                )
+        app.config.update(
+            SQLALCHEMY_DATABASE_URI="sqlite:///test.db",
+            SECRET_KEY='TEST_SECRET_KEY',
+            DEBUG=True
+        )
         return app
 
     def setUp(self):
@@ -29,45 +30,57 @@ class TestBase(TestCase):
 
 class TestViews(TestBase):
     def test_home_get(self):
-        response = self.client.get(url_for('home'))
-        self.assertEqual(response.status_code, 200)
-    
-    def test_view_playlist_get(self):
-        response = self.client.get(url_for('view'))
-        self.assertEqual(response.status_code, 200)
-
-    def test_create_playlist_get(self):
-        response = self.client.get(url_for('create'))
-        self.assertEqual(response.status_code, 200)
-
-    def test_addsong_get(self):
-        response = self.client.get(url_for('addsong'))
-        self.assertEqual(response.status_code, 200)
-    
-    def test_update_get(self):
-        response = self.client.get(url_for('update' playlist_id=1))
-        self.assertEqual(response.status_code, 200)
-
-    def test_delete_get(self):
-        response = self.client.get(url_for('delete' playlist_id=1),
+        response = self.client.get(url_for('home'),
         follow_redirects=True
         )
         self.assertEqual(response.status_code, 200)
     
+    def test_view_playlist_get(self):
+        response = self.client.get(url_for('view_playlist', playlist_id=1),
+        follow_redirects=True
+        )
+        self.assertEqual(response.status_code, 200)
+
+    def test_create_playlist_get(self):
+        response = self.client.get(url_for('create_playlist'),
+        follow_redirects=True
+        )
+        self.assertEqual(response.status_code, 200)
+
+    def test_addsong_get(self):
+        response = self.client.get(url_for('addsong'),
+        follow_redirects=True
+        )
+        self.assertEqual(response.status_code, 200)
+    
+    def test_update_get(self):
+        response = self.client.get(url_for('update', playlist_id=1),
+        follow_redirects=True
+        )
+        self.assertEqual(response.status_code, 200)
+
     def test_deletesong(self):
-        response = self.client.get(url_for('deletesong' song_id=1),
+        response = self.client.get(url_for('deletesong', song_id=1),
+        follow_redirects=True
+        )
+        self.assertEqual(response.status_code, 200)
+    
+    def test_delete_get(self):
+        response = self.client.get(url_for('delete', playlist_id=1),
         follow_redirects=True
         )
         self.assertEqual(response.status_code, 200)
 
 class TestRead(TestBase):
-    def test_read_home(self):
-        response = self.client.get(url_for('home'))
-        self.assertIn(b"Test the Flask app", response.data)
+    def test_read_view_playlist(self):
+        response = self.client.get(url_for('home'),
+        follow_redirects=True
+        )
+        self.assertNotIn(b"Test the Flask app", response.data)
 
 class TestAdd(TestBase):
-    def test_create(self):
-        response = self.client.post(url_for('create'),
+    def test_create_playlist(self):
+        response = self.client.post(url_for('create_playlist'),
         data = dict(playlist_name= "Rock"), 
         follow_redirects=True
         )
