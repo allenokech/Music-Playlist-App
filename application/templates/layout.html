@@ -6,7 +6,7 @@
         <h1>Music Playlists - {{ title }}</h1>
         <a href="{{ url_for('home') }}">Home</a>
         <a href="{{ url_for('create_playlist') }}">Create a Playlist</a>
-        <a href="{{ url_for('addsong', id=song_id, playlist_id=playlist_id) }}">Add a Song</a>
+        <a href="{{ url_for('addsong') }}">Add a Song</a>
         {% block body %}
         {% endblock body %}
     </body>

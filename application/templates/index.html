@@ -1,36 +1,42 @@
 {% extends 'layout.html' %}
 {% block body %}
 
-<h2>Music Playlists</h2>
+<h2>List of Music Playlists</h2>
 {% for playlist in all_playlists %}
-        {{ playlist.playlist_name }}
+        Playlist Name: {{ playlist.playlist_name }}
         <br>
-        {{ playlist.date_created }}
+        Date Created: {{ playlist.date_created }}
         <br> 
-        <form action="{{ url_for('view_playlist', id=playlist.id) }}">
+        <form action="{{ url_for('view_playlist', playlist_id=playlist.id) }}">
             <input type=submit value="View Playlist">
         </form>
-        <form action="{{ url_for('update', id=playlist.id) }}">
+        <form action="{{ url_for('update', playlist_id=playlist.id) }}">
             <input type=submit value="Update Playlist">
         </form>
-        <form action="{{ url_for('delete', id=playlist.id) }}">
+        <form action="{{ url_for('delete', playlist_id=playlist.id) }}">
             <input type=submit value="Delete Playlist">
         </form>
         <br>
-        <br> 
-{% endfor %}
-
-<h2>Songs Added</h2>
+<h4>Songs Added</h4>
 {% for song in all_songs %}
-        {{ song.song_title }}
+{% if song.playlist == playlist.id %}
+        Song Title: {{ song.song_title }}
         <br>
-        {{ song.artist_name }} 
+        Artist Name: {{ song.artist_name }} 
         <br> 
-        <form action="{{ url_for('addsong', id=song.id, playlist_id=playlist.id) }}">
+        Genre: {{ song.genre }}
+        <br>
+        Release Year: {{ song.release_year }}
+        <form action="{{ url_for('addsong') }}">
             <input type=submit value="Add Song">
         </form>
+        <form action="{{ url_for('deletesong', song_id=song.id) }}">
+            <input type=submit value="Delete Song">
+        </form>
         <br>
-        <br> 
-{% endfor %} 
+        <br>
+{% endif %}
+{% endfor %}
+{% endfor %}
 
 {% endblock body %}
