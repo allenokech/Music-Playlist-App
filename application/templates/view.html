@@ -5,16 +5,23 @@
 <br>
  Date Created:  {{ playlist.date_created }}
  <br>
- {% for songs in all_songs %}
- Song Title: {{ song.song_title }}
- <br>
- Artist Name: {{ song.artist_name }} 
- <br> 
- Genre: {{ song.genre }}
- <br>
- Release Year: {{ song.release_year }}
- <br>
- <br>
+ {% for song in all_songs %}
+ {% if song.playlist == playlist.id %}
+        Song Title: {{ song.song_title }}
+        <br>
+        Artist Name: {{ song.artist_name }} 
+        <br> 
+        Genre: {{ song.genre }}
+        <br>
+        Release Year: {{ song.release_year }}
+        <form action="{{ url_for('addsong') }}">
+            <input type=submit value="Add Song">
+        </form>
+        <form action="{{ url_for('deletesong', song_id=song.id) }}">
+            <input type=submit value="Delete Song">
+        </form>
+        <br>
+        <br>
 {% endif %}
 {% endfor %}
 {% endblock body %}
