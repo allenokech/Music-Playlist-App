@@ -32,7 +32,6 @@ def create_playlist():
 def addsong():
     form = SongForm()
     if request.method == 'POST':
-        if playlist_id == playlist_id:
             if form.validate_on_submit():
                 new_song = Song(song_title=form.song_title.data, artist_name=form.artist_name.data, genre=form.genre.data, release_year=form.release_year.data, playlist=form.playlist.data)
                 db.session.add(new_song)
@@ -50,7 +49,7 @@ def update(playlist_id):
         db.session.commit()
         return redirect(url_for("home"))
 
-    return render_template("update.html", form=form, title="Updated Playlist", playlist=playlist)
+    return render_template("update.html", form=form, title="Update Playlist", playlist=playlist)
 
 @app.route('/delete/<int:playlist_id>')
 def delete(playlist_id):
