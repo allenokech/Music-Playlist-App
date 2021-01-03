@@ -4,5 +4,18 @@
  Playlist Name: {{ playlist.playlist_name }} 
 <br>
  Date Created:  {{ playlist.date_created }}
-
+ <br>
+ {% for songs in all_songs %}
+ {% if song.playlist == playlist.id %}
+ Song Title: {{ song.song_title }}
+ <br>
+ Artist Name: {{ song.artist_name }} 
+ <br> 
+ Genre: {{ song.genre }}
+ <br>
+ Release Year: {{ song.release_year }}
+ <br>
+ <br>
+{% endif %}
+{% endfor %}
 {% endblock body %}
