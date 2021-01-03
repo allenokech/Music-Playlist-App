@@ -1,14 +1,14 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, IntegerField, SelectField
 from wtforms.validators import DataRequired
-from application.models import Playlist
+from application.models import Playlist, Song
 
 class SongForm(FlaskForm):
     song_title = StringField("Song Title", validators=[DataRequired()])
     artist_name = StringField("Artist's Name", validators=[DataRequired()])
     genre = StringField("Song Genre", validators=[DataRequired()])
     release_year = IntegerField("Year of Release", validators=[DataRequired()])
-    playlist = SelectField("Select Playlist", choices=[(p.id, p.playlist_name) for p in Playlist.query.order_by("playlist_name")])
+    playlist = SelectField("Select Playlist", choices=[(p.id, p.playlist_name) for p in Playlist.query.order_by("playlist_name")], validators=[DataRequired()])
     submit = SubmitField("Add Song")
 
 class PlaylistForm(FlaskForm):

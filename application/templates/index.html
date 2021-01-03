@@ -16,7 +16,6 @@
         <form action="{{ url_for('delete', playlist_id=playlist.id) }}">
             <input type=submit value="Delete Playlist">
         </form>
-        <br>
 <h4>Songs Added</h4>
 {% for song in all_songs %}
 {% if song.playlist == playlist.id %}

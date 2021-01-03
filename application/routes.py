@@ -32,11 +32,12 @@ def create_playlist():
 def addsong():
     form = SongForm()
     if request.method == 'POST':
-        if form.validate_on_submit():
-            new_song = Song(song_title=form.song_title.data, artist_name=form.artist_name.data, genre=form.genre.data, release_year=form.release_year.data, playlist=form.playlist.data)
-            db.session.add(new_song)
-            db.session.commit()
-            return redirect(url_for("home"))
+        if playlist_id == playlist_id:
+            if form.validate_on_submit():
+                new_song = Song(song_title=form.song_title.data, artist_name=form.artist_name.data, genre=form.genre.data, release_year=form.release_year.data, playlist=form.playlist.data)
+                db.session.add(new_song)
+                db.session.commit()
+                return redirect(url_for("home"))
     
     return render_template('add.html', title='Add a Song', form=form)
      
