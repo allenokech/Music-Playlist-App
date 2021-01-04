@@ -10,7 +10,3 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 
 pytest --cov=application --cov-report term-missing --disable-warnings
-
-sudo systemctl daemon-reload
-sudo systemctl stop music-playlist.service
-sudo systemctl start music-playlist.service
