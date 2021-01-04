@@ -64,7 +64,7 @@ Additions were made to the final risk assessment during the latter stages of the
 ### Testing
 
 ### Front End Design
-![home page](./documentation/"Home page".png)
+![home page](./documentation/"Home page.png")
 
 ### Future Improvements
 
