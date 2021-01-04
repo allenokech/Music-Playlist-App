@@ -23,32 +23,50 @@ In order to do this, the follwowing is required:
 To achieve this, I decided to create a simple music playlist application that allows users to create playlists and add, update and delete songs within those playlists.
 The application must allow the user to do the following:
 - Create:
-  - Playlist Name
-  - Song Title
-  - Artist Name
-  - Release Year
+  - Playlist
+    - Playlist Name
+  - Songs
+    - Song Title
+    - Artist Name
+    - Genre
+    - Release Year
+    - Allocate to a Playlist
 - Read:
-  - Playlists that have been created
+  - Created Playlists
 - Update:
-  - Playlists (playlist name, song information)
+  - Playlists
+    - Playlist Name
 - Delete:
   - Songs from playlists
   - Playlists
 
 ### Architecture
 #### Database Structure
-Below is an entity relationship diagram (ERD) showcasing the structure of the database. 
+In order to create the Music Playlist app, a database was required in order to store data. Regarding this project, the data to be stored is music playlists and songs. 
+Below is the original entity relationship diagram (ERD) showcasing the structure of the database:
+
+The original ERD can be found below:
+
+The main reason for the changes made to the ERD is due lack of time to create all of the functionality for the original design. This will be explained in further detail in the 'Future Improvements' section at the end of this document.
+
 
 ### Project Tracking
-This is where the project backlog is stored, highlighting each individual task broken down from the project epic. User stories have also been documented to emphasise the key functions expected from the CRUD application from the user's perspective.
+For project tracking, I chose Trello as my tool of choice due to previous experiences using it and its lightweight, interactive UI makes the proces much simpler. This is where the project backlog is stored, highlighting each individual task broken down from the project epic. User stories have also been documented to emphasise the key functions expected from the CRUD application from the user's perspective.
 
 ### Risk Assessment
-The risk assessment for this project can be located here:
+A risk assessment was created in order to monitor and plan for any potential risks that could jeaopardize the project. 
+This is the original risk assessment created during the planning stages of the project:
+
+The final risk assessment for this project can be located here:
+
+Additions were made to the final risk assessment during the latter stages of the project as it became clear that more issues could arise the further I went into development.
 
 ### Testing
 
 ### Front End Design
 
+
 ### Future Improvements
 
 ### Author
+# Tonny Allen Okech
