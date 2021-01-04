@@ -42,18 +42,18 @@ The application must allow the user to do the following:
 
 ### Architecture
 #### Database Structure
-In order to create the Music Playlist app, a database was required in order to store data. Regarding this project, the data to be stored is music playlists and songs. 
-Below is the original entity relationship diagram (ERD) showcasing the structure of the database:
+In order to create the Music Playlist app, a database was required in order to store data. Regarding this project, the data to be stored is music playlists and songs. Therefore the two main entities in the diagram were Playlist and Song. 
+
+##### Below is the original entity relationship diagram (ERD) showcasing the structure of the database:
 ![original erd](./documentation/original_erd.PNG)
 
-The second ERD can be found below:
+##### The second ERD can be found below:
 ![second erd](./documentation/second_erd.PNG)
 
-The final ERD:
+##### The final ERD:
 ![final erd](./documentation/final_erd.PNG)
 
 The main reason for the changes made to the ERD is due lack of time to create all of the functionality for the original design. This will be explained in further detail in the 'Future Improvements' section at the end of this document.
-
 
 ### Project Tracking
 For project tracking, I chose Trello as my tool of choice due to previous experiences using it and its lightweight, interactive UI makes the proces much simpler. This is where the project backlog is stored, highlighting each individual task broken down from the project epic. User stories have also been documented to emphasise the key functions expected from the CRUD application from the user's perspective.
@@ -73,7 +73,7 @@ Additions were made to the final risk assessment during the latter stages of the
 
 ![home page](./documentation/home_page.PNG)
 <br><br>
-This is the application's homepage, at the top of the page is the title and navigation which enables the user to simply navigate from one page to another. The navigation is simple yet effective as each link clearly shows how a user can both create playlists and add songs. Below the navigation, the homepage itself contains information about every created playlist as well as the songs added to them below. Users can view, update or delete each individual playlist as well as add and delete songs with each dedicated button created for those functions.
+This is the application's homepage.
 
 #### Create Playlist
 
