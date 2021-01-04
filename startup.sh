@@ -11,9 +11,6 @@ pip3 install -r requirements.txt
 
 pytest --cov=application
 
-sudo mkdir /opt/Music-Playlist-App/application
-sudo chown -R jenkins /opt/Music-Playlist-App/application
-
 sudo systemctl daemon-reload
 sudo systemctl stop music-playlist.service
 sudo systemctl start music-playlist.service
