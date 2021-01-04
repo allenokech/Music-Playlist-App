@@ -9,7 +9,7 @@ python3 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
 
-pytest --cov=application tests/test_unit.py --cov-report term-missing --disable-warnings
+pytest --cov=application --cov-report term-missing --disable-warnings
 
 sudo systemctl daemon-reload
 sudo systemctl stop music-playlist.service
