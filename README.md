@@ -65,25 +65,25 @@ Additions were made to the final risk assessment during the latter stages of the
 
 ### Front End Design
 ##### Home Page
-<br><br>
+
 ![home page](./documentation/home_page.PNG)
 <br><br>
 This is the application's homepage, at the top of the page is the title and navigation which enables the user to simply navigate from one page to another. The navigation is simple yet effective as each link clearly shows how a user can both create playlists and add songs. Below the navigation, the homepage itself contains information about every created playlist as well as the songs added to them below. Users can view, update or delete each individual playlist as well as add and delete songs with each dedicated button created for those functions.
 
 #### Create Playlist
-<br><br>
+
 ![create_page](./documentation/create_page.PNG)
 <br><br>
 The create page allows users to create a simple playlist with a name of their choosing.
 
 #### Add Song
-<br>
+
 ![add_song](./documentation/add_song.PNG)
 <br><br>
 This page allows users to add song to a specific playlist using a dropdown menu.
 
 #### Update Playlist
-<br>
+
 ![update playlist](./documentation/update_playlist.PNG)
 <br><br>
 This page allows users to update playlist's names.
