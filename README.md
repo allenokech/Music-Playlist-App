@@ -63,8 +63,6 @@ The final risk assessment for this project can be located here:
 
 Additions were made to the final risk assessment during the latter stages of the project as it became clear that more issues could arise the further I went into development.
 
-### Testing
-
 ### Front End Design
 #### Home Page
 
@@ -89,6 +87,8 @@ This page allows users to add song to a specific playlist using a dropdown menu.
 ![update playlist](./documentation/update_playlist.PNG)
 <br><br>
 This page allows users to update playlist's names.
+
+### Testing
 
 ### Future Improvements
 
