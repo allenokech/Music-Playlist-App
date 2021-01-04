@@ -40,7 +40,7 @@ The application must allow the user to do the following:
 Below is an entity relationship diagram (ERD) showcasing the structure of the database. 
 
 ### Project Tracking
-This is where the project backlog is stored, highlighting each individual task broken down from the project epic. User stories have also been documented to emphasise the key functions expected from the CRUD application from the users' perspective.
+This is where the project backlog is stored, highlighting each individual task broken down from the project epic. User stories have also been documented to emphasise the key functions expected from the CRUD application from the user's perspective.
 
 ### Risk Assessment
 The risk assessment for this project can be located here:
@@ -48,3 +48,5 @@ The risk assessment for this project can be located here:
 ### Testing
 
 ### Front End Design
+
+###
