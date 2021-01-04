@@ -44,8 +44,13 @@ The application must allow the user to do the following:
 #### Database Structure
 In order to create the Music Playlist app, a database was required in order to store data. Regarding this project, the data to be stored is music playlists and songs. 
 Below is the original entity relationship diagram (ERD) showcasing the structure of the database:
+![original erd](./documentation/original_erd.PNG)
 
-The original ERD can be found below:
+The second ERD can be found below:
+![second erd](./documentation/second_erd.PNG)
+
+The final ERD:
+![final erd](./documentation/final_erd.PNG)
 
 The main reason for the changes made to the ERD is due lack of time to create all of the functionality for the original design. This will be explained in further detail in the 'Future Improvements' section at the end of this document.
 
