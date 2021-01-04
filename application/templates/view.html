@@ -5,8 +5,8 @@
 <br>
  Date Created:  {{ playlist.date_created }}
  <br>
- {% for song in all_songs %}
- {% if song.playlist == playlist.id %}
+{% for song in all_songs %}
+    {% if song.playlist == playlist.id %}
         Song Title: {{ song.song_title }}
         <br>
         Artist Name: {{ song.artist_name }} 
@@ -22,6 +22,6 @@
         </form>
         <br>
         <br>
-{% endif %}
+    {% endif %}
 {% endfor %}
 {% endblock body %}

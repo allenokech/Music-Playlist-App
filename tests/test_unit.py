@@ -65,11 +65,11 @@ class TestViews(TestBase):
         )
         self.assertEqual(response.status_code, 200)
     
-    def test_delete_get(self):
-        response = self.client.get(url_for('delete', playlist_id=1),
-        follow_redirects=True
-        )
-        self.assertEqual(response.status_code, 200)
+    #def test_delete_get(self):
+     #   response = self.client.get(url_for('delete', playlist_id=1),
+      #  follow_redirects=True
+       # )
+        #self.assertEqual(response.status_code, 200)
 
 class TestRead(TestBase):
     def test_read_view_playlist(self):
