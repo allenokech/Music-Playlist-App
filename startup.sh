@@ -1,5 +1,6 @@
 #!/bin/bash 
 
+export DATABASE_URI="mysql+pymysql://root:password@35.246.16.254/playlist_db"
 sudo apt update
 sudo apt-get update
 sudo apt-get install python3
