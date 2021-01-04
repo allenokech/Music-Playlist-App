@@ -56,15 +56,17 @@ For project tracking, I chose Trello as my tool of choice due to previous experi
 ### Risk Assessment
 A risk assessment was created in order to monitor and plan for any potential risks that could jeaopardize the project. 
 This is the original risk assessment created during the planning stages of the project:
+![original riskassessment](./documentation/original_riskassessment.PNG)
 
 The final risk assessment for this project can be located here:
+![final riskassessment](./documentation/final_riskassessment.PNG)
 
 Additions were made to the final risk assessment during the latter stages of the project as it became clear that more issues could arise the further I went into development.
 
 ### Testing
 
 ### Front End Design
-##### Home Page
+#### Home Page
 
 ![home page](./documentation/home_page.PNG)
 <br><br>
