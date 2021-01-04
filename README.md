@@ -64,7 +64,21 @@ Additions were made to the final risk assessment during the latter stages of the
 ### Testing
 
 ### Front End Design
+Home Page
+<br><br>
 ![home page](./documentation/home_page.PNG)
+<br>
+Create Playlist
+<br>
+![create_page](./documentation/create_page.PNG)
+<br><br>
+Add Song
+<br>
+![add_song](./documentation/add_song.PNG)
+<br><br>
+Update Playlist
+<br>
+![update playlist](./documentation/update_playlist.PNG)
 
 ### Future Improvements
 
