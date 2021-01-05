@@ -19,7 +19,7 @@ In order to do this, the follwowing is required:
 - Functioning front-end website created in Flask
 - Full integration into GitHub
 
-#### My Proposition
+#### My Proposal
 To achieve this, I decided to create a simple music playlist application that allows users to create playlists and add, update and delete songs within those playlists.
 The application must allow the user to do the following:
 - Create:
