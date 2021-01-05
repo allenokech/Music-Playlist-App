@@ -100,7 +100,11 @@ Using Pytest the unit testing was used to test each function within the route. T
 ![jenkins_coverage](./documentation/jenkins_coverage.PNG)
 <br>
 ![unit_testing_coverage](./documentation/unit_testing_coverage_html.PNG)
+
 ### Future Improvements
+- The current application only allows for users to add songs to a single individual playlist, an improved application could enable song additions to multiple playlists at once.
+
+- Reiterating what was stated during the database structure, in future an upgraded application could contain Artists, Albums, Genres and Record Labels. These added entities would enable for a much more detailed application with users being able to store more information within their playlists. Infact, with the new entities the future Music Playlist application could actually be converted into a Music Library.
 
 ### Author
 ###### Tonny Allen Okech
