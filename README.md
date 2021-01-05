@@ -59,7 +59,7 @@ The main reason for the changes made to the ERD is due lack of time to create al
 For project tracking, I chose Trello as my tool of choice due to previous experiences using it and its lightweight, interactive UI makes the proces much simpler. This is where the project backlog is stored, highlighting each individual task broken down from the project epic. User stories have also been documented to emphasise the key functions expected from the CRUD application from the user's perspective.
 
 ### Risk Assessment
-A risk assessment was created in order to monitor and plan for any potential risks that could jeaopardize the project. 
+A risk assessment was created in order to monitor and plan for any potential risks that could jeaopardize the project. This proactive approach to implement the risk assessment could prevent the majority of incidents that could possibly occur during the project and minimises the likelihood and impact of those incidents.
 This is the original risk assessment created during the planning stages of the project:
 ![original riskassessment](./documentation/original_riskassessment.PNG)
 
