@@ -40,8 +40,8 @@ The application must allow the user to do the following:
   - Songs from playlists
   - Playlists
 
-### Architecture
-#### Database Structure
+## Architecture
+### Database Structure
 In order to create the Music Playlist app, a database was required in order to store data. Regarding this project, the data to be stored is music playlists and songs. Therefore the two main entities in the diagram were Playlist and Song. 
 
 ##### Below is the original entity relationship diagram (ERD) showcasing the structure of the database:
@@ -68,6 +68,7 @@ The final risk assessment for this project can be located here:
 
 Additions were made to the final risk assessment during the latter stages of the project as it became clear that more issues could arise the further I went into development.
 
+## Development
 ### Front End Design
 #### Home Page
 
@@ -94,7 +95,9 @@ This page allows users to add song to a specific playlist using a dropdown menu.
 This page allows users to update playlist's names.
 
 ### Testing
-
+#### Unit Testing
+The unit testing was used to test each function within the route. The tests were designed to verify whether data is correctly inserted into the application whilst also checking if unexpected or incorrect values have been inserted. Furthermore, with the utilisation of Webhooks through Github, the unit tests are run automatically in Jenkins after each push to the project repository in Github. Upon completion of the tests built in Jenkins, a coverage report is also returned to the console with further information about the tests.
+![jenkins coverage](./documentation/jenkins_covergae.PNG)
 ### Future Improvements
 
 ### Author
