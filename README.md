@@ -57,14 +57,17 @@ The main reason for the changes made to the ERD is due lack of time to create al
 
 ### Project Tracking
 For project tracking, I chose Trello as my tool of choice due to previous experiences using it and its lightweight, interactive UI makes the proces much simpler. This is where the project backlog is stored, highlighting each individual task broken down from the project epic. User stories have also been documented to emphasise the key functions expected from the CRUD application from the user's perspective.
+
 ![Trello](./documentation/Trello.PNG)
 
 ### Risk Assessment
 A risk assessment was created in order to monitor and plan for any potential risks that could jeaopardize the project. This proactive approach to implement the risk assessment could prevent the majority of incidents that could possibly occur during the project and minimises the likelihood and impact of those incidents.
 This is the original risk assessment created during the planning stages of the project:
+
 ![original riskassessment](./documentation/original_riskassessment.PNG)
 
 The final risk assessment for this project can be located here:
+
 ![final riskassessment](./documentation/final_riskassessment.PNG)
 
 Additions were made to the final risk assessment during the latter stages of the project as it became clear that more issues could arise the further I went into development.
@@ -104,7 +107,6 @@ Using Pytest the unit testing was used to test each function within the route. T
 
 ### Future Improvements
 - The current application only allows for users to add songs to a single individual playlist, an improved application could enable song additions to multiple playlists at once.
-
 - Reiterating what was stated during the database structure, in future an upgraded application could contain Artists, Albums, Genres and Record Labels. These added entities would enable for a much more detailed application with users being able to store more information within their playlists. Infact, with the new entities the future Music Playlist application could actually be converted into a Music Library.
 
 ### Author
