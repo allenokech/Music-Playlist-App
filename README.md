@@ -100,6 +100,7 @@ Using Pytest the unit testing was used to test each function within the route. T
 ![jenkins_coverage](./documentation/jenkins_coverage.PNG)
 <br>
 ![unit_testing_coverage](./documentation/unit_testing_coverage_html.PNG)
+
 ### Future Improvements
 
 ### Author
