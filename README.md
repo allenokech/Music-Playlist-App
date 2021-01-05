@@ -96,8 +96,10 @@ This page allows users to update playlist's names.
 
 ### Testing
 #### Unit Testing
-The unit testing was used to test each function within the route. The tests were designed to verify whether data is correctly inserted into the application whilst also checking if unexpected or incorrect values have been inserted. Furthermore, with the utilisation of Webhooks through Github, the unit tests are run automatically in Jenkins after each push to the project repository in Github. Upon completion of the tests built in Jenkins, a coverage report is also returned to the console with further information about the tests.
-![jenkins coverage](./documentation/jenkins_covergae.PNG)
+Using Pytest the unit testing was used to test each function within the route. The tests were designed to verify whether data is correctly inserted into the application whilst also checking if unexpected or incorrect values have been inserted. Furthermore, with the utilisation of Webhooks through Github, the unit tests are run automatically in Jenkins after each push to the project repository in Github. Upon completion of the tests built in Jenkins, a coverage report is also returned to the console with further information about the tests.
+![jenkins_coverage](./documentation/jenkins_coverage.PNG)
+<br>
+![unit_testing_coverage](./documentation/unit_testing_coverage_html.PNG)
 ### Future Improvements
 
 ### Author
